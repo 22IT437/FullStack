@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resistration form</title>
+    <style>
+        #first{
+            color:brown;
+        }
+        #second{
+            color:blue;
+        }
+        #third{
+            color:aqua;
+        }
+        .job{
+            background-color: blanchedalmond;
+        }
+        #for{
+            height: 50px;
+            width:50px;
+            background-color:darkgoldenrod;
+            border: 5px solid rgb(61, 172, 59);
+            color: black;
+          overflow:scroll;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>Resistration Form</h2>
+    <form action="" method="post">
+        
+        Full name:<input type="text" id="name"><br><br>
+        user name:<input type="text"><br><br>
+        password:<input type="password" id="password"><br><br>
+     year:   <select name="" id="year">
+            <option value="">1St year</option>
+            <option value="">2nd year</option>
+            <option value="">3rd year</option>
+            <option value="">4th year</option>
+<br><br>
+        </select><br><br>
+        MO:<input type="number" id="mobile"><br><br>
+        <button type="button" onclick="send()" id="send">send</button>
+        <button value="reset">reset</button>
+    </form>
+    <div id="result"></div>
+    <audio controls autoplay>
+        <source src="" type="audio/mp3">
+    </audio>
+    <video controls autoplay>
+        <source src=""C:\Movies\Bajirao.Mastani.2015.1080p.BluRay.Hindi.DD.2.0.x264.ESubs.mkv"" type="video/ogg"/>
+        <source src=""C:\Movies\Bajirao.Mastani.2015.1080p.BluRay.Hindi.DD.2.0.x264.ESubs.mkv"" type="video/mp4"/>
+    </video><br>
+   <span id="first" class="job">hello</span><br>
+   <span id="second" class="job">I am  bharat</span><br>
+   <div id="third" class="job">welcome to our class</div><br>
+    <div id="for"> example</div>
+
+    <script>
+        //console.log("hrllo");
+     function send(){
+    const name = document.getElementById("name");
+    const password = document.getElementById("password");
+    const mobile = document.getElementById("mobile");
+    const year = document.getElementById("year");
+    const result = document.getElementById("result");
+    result.textcontent = `${name}`;
+  }
+    </script>
+</body>
+</html>
